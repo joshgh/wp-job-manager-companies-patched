@@ -158,13 +158,13 @@ class Astoundify_Job_Manager_Companies {
 	 * @return void
 	 */
 	public function posts_filter( $query ) {
-		if ( ! ( get_query_var( $this->slug ) && $query->is_main_query() && ! is_admin() ) )
+		if ( ! ( ! is_admin() && $query->get( $this->slug ) && $query->is_main_query() ) )
 			return;
 
 		$meta_query = array(
 			array(
 				'key'   => '_company_name',
-				'value' => urldecode( get_query_var( $this->slug ) )
+				'value' => urldecode( $query->get( $this->slug ) )
 			)
 		);
 
