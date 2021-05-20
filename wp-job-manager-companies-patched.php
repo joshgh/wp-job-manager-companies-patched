@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: WP Job Manager - Company Profiles
+ * Plugin Name: WP Job Manager - Company Profiles - Patched
  * Plugin URI:  https://github.com/astoundify/wp-job-manager-companies
- * Description: Output a list of all companies that have posted a job, with a link to a company profile.
+ * Description: *Patched* Output a list of all companies that have posted a job, with a link to a company profile.
  * Author:      Astoundify
  * Author URI:  http://astoundify.com
  * Version:     1.4
